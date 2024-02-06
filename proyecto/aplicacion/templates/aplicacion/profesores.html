@@ -6,5 +6,28 @@
     
 
 {% block contenido %}
-    <h1> Estoy en la pagina de Profesores </h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Profesión</th>
+
+        </tr>
+    </thead>
+    <tbody>
+{% for p in profesores  %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.apellido }}</td>
+            <td>{{ p.email }}</td>
+            <td>{{ p.profesion }}</td>
+
+        </tr>
+{% endfor %}
+    </tbody>
+</table>
 {% endblock contenido %}
