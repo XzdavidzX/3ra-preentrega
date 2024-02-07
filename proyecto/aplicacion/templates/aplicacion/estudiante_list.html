@@ -1,7 +1,7 @@
 {% extends 'aplicacion/home.html' %}
 
 {% block titulo %}
-    <h1 class="display-5 fw-bolder text-white mb-2">Profesores</h1>
+    <h1 class="display-5 fw-bolder text-white mb-2" >Estudiantes</h1>
 {% endblock titulo %}
     
 
@@ -9,10 +9,10 @@
 
 <table>
     <tr>
-        <td width="200"><h2>Profesores</h2></td>
+        <td width="200"><h2>Estudiantes</h2></td>
         <td>
             <a
-            href="{% url 'profesorCrear' %}"
+            href="{% url 'estudiante_create' %}"
             ><button type="button" class="btn btn-outline-primary">+</button></a>
         </td>
     </tr>
@@ -25,22 +25,18 @@
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Email</th>
-            <th>Profesión</th>
-
         </tr>
     </thead>
     <tbody>
-{% for p in profesores  %}
+{% for e in estudiante_list  %}
         <tr>
-            <td>{{ p.id }}</td>
-            <td>{{ p.nombre }}</td>
-            <td>{{ p.apellido }}</td>
-            <td>{{ p.email }}</td>
-            <td>{{ p.profesion }}</td>
+            <td>{{ e.id }}</td>
+            <td>{{ e.nombre }}</td>
+            <td>{{ e.apellido }}</td>
+            <td>{{ e.email }}</td>
             <td>
               <a
-                href="{% url 'profesorBorrar' p.id %}">
-                <button type="button" class="btn btn-outline-danger">Borrar</button>
+                href="{% url 'estudiante_delete' e.id %}" ><button type="button" class="btn btn-outline-danger">borrar</button>
               </a>                
             </td>
 

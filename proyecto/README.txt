@@ -1,20 +1,40 @@
-# Nombre de Proyecto:
-# Alumno: 
-# Fecha:
-# Versión: Pre-entregable 3 
+# Nombre del Proyecto: Examenes Finales
+# Alumno: David Hernandez
+# Fecha de Entrega: mie, 7/2/2024
+# Version: pre-entregable 3
 
-# Aplicacion que permite la funcionalidad de una Institucion Educativa
+# Es una aplicacion que permite administrar los examenes finales de una escuela
 
-- Los modelos que presenta esta aplicacion son:
-  - Estudiante
-  - Profesor
-  - Curso
-  - Entregable
+- Los modelos que se presentan son:
 
-- Orden de prueba de la aplicacion 
-  - Crear cursos: localhost:8000/aplicacion/curso_form  
-  - 
+  - Estudiantes
+  - profesores
+  - Cursos
 
-  - Consultar todos los cursos: localhost:8000/aplicacion/cursos
-    Desde el menu, seleccionar la opcion cursos
-  - Busqueda de cursos por un patron en el nombre: ......
+- Funcionalidades:
+  
+  - registrar y eliminar Cursos de la base de datos
+  - registrar y eliminar Estudiantes de la base de datos
+  - registrar y eliminar Profesores de la base de datos
+  - buscar cursos por su nombre en la base de datos
+
+- Rutas de las Funcionalidades:
+
+  - consultar y eliminar Cursos:  localhost:8000/aplicacion/cursos/
+  - agregar un Curso:  localhost:8000/aplicacion/curso_form/
+
+  - consultar y eliminar Estudiantes:  localhost:8000/aplicacion/estudiantes/
+  - agregar un Estudiante:  localhost:8000/aplicacion/estudiante_create/
+
+  - consultar y eliminar Profesor:  localhost:8000/aplicacion/profesores/
+  - agregar un Profesor:  localhost:8000/aplicacion/profesor_crear/
+
+
+  - buscar un Curso por su nombre: localhost:8000/aplicacion/buscar/
+
+
+  super usuario: david/123
+
+  fin...
+
+  gracias por leer :)
